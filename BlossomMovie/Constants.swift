@@ -27,6 +27,16 @@ struct Constants {
     static let testTitleURL = "https://hollywoodlife.com/wp-content/uploads/2018/03/beetlejuice-2-release-date-ec-1.jpg?w=6802"
     static let testTitleURL2 = "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg"
     static let testTitleURL3 = "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    
+    static let posterURLStart = "https://image.tmdb.org/t/p/w500"
+    
+    static func addPosterPath(to titles: inout[Title]) {
+        for index in titles.indices {
+            if let path = titles[index].posterPath {
+                titles[index].posterPath = Constants.posterURLStart + path
+            }
+        }
+    }
 
 }
 
