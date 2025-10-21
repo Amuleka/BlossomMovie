@@ -15,6 +15,9 @@ struct Constants {
     static let downloadingString = "Download"
     static let playString = "Play"
     static let trendingMovieString = "Trending Movies"
+    static let trendingTVString = "Trending TV"
+    static let topRatedMovieString = "Top Rated Movies"
+    static let topRatedTVString = "Top Rated TV"
     
     static let homeIconString = "house"
     static let upcomingIconString = "play.circle"
