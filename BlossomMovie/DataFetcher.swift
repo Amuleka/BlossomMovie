@@ -10,6 +10,8 @@ import Foundation
 struct DataFetcher {
     let tmdbBaseURL = APIConfig.shared?.tmdbBaseURL
     let tmdbAPIKey = APIConfig.shared?.tmdbAPIKey
+    let youtubeSearchURL = APIConfig.shared?.youtubeSearchURL
+    let youtubeAPIKey = APIConfig.shared?.youtubeAPIKey
     
     func fetchTitle(for media: String, by type: String) async throws -> [Title] {
         let fetchTitlesURL = try buildURL(media: media, type: type)
@@ -61,4 +63,25 @@ struct DataFetcher {
         
         return url
     }
+    
+    func fetchVideoId(for title: String) async throws -> String {
+        guard
+            let baseSearchURL = youtubeSearchURL,
+            let searchAPIKey  = youtubeAPIKey
+        else {
+            throw NetworkError.missingConfig
+        }
+
+        let trailerSearch = title + YouTubeURLStrings.space.rawValue + YouTubeURLStrings.trailer.rawValue
+        
+        guard let fetchVideoURL = URL(string: baseSearchURL)?.appending(queryItems: [
+            URLQueryItem(name: YouTubeURLStrings.queryShorten.rawValue, value: trailerSearch),
+            URLQueryItem(name: YouTubeURLStrings.key.rawValue, value: searchAPIKey),
+        ]) else {
+            throw NetworkError.urlBuildFailed
+        }
+        
+        print(fetchVideoURL)
+    }
+    
 }
