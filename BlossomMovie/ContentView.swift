@@ -24,8 +24,10 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            print(APIConfig.shared.tmdbAPIKey)
-            print(APIConfig.shared.tmdbBaseURL)
+            if let config = APIConfig.shared {
+                print(config.tmdbAPIKey)
+                print(config.tmdbBaseURL)
+            }
         }
     }
 }
