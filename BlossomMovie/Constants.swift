@@ -14,6 +14,7 @@ struct Constants {
     static let searchString = "Search"
     static let downloadingString = "Download"
     static let playString = "Play"
+    static let trendingMovieString = "Trending Movies"
     
     static let homeIconString = "house"
     static let upcomingIconString = "play.circle"
@@ -21,6 +22,9 @@ struct Constants {
     static let downloadIconString = "arrow.down.to.line"
     
     static let testTitleURL = "https://hollywoodlife.com/wp-content/uploads/2018/03/beetlejuice-2-release-date-ec-1.jpg?w=6802"
+    static let testTitleURL2 = "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg"
+    static let testTitleURL3 = "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+
 }
 
 
