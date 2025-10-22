@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>TFInternalTestingOnly</key>
+  <false/>
+
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <!-- Broad allow for WKWebView content -->
+    <key>NSAllowsArbitraryLoadsInWebContent</key>
+    <true/>
+
+    <!-- (Optional) Specific allow-list; safe to keep alongside the broad flag -->
+    <key>NSExceptionDomains</key>
+    <dict>
+      <key>youtube.com</key>
+      <dict><key>NSIncludesSubdomains</key><true/></dict>
+      <key>youtube-nocookie.com</key>
+      <dict><key>NSIncludesSubdomains</key><true/></dict>
+      <key>googlevideo.com</key>
+      <dict><key>NSIncludesSubdomains</key><true/></dict>
+      <key>ytimg.com</key>
+      <dict><key>NSIncludesSubdomains</key><true/></dict>
+      <key>ggpht.com</key>
+      <dict><key>NSIncludesSubdomains</key><true/></dict>
+      <key>googleapis.com</key>
+      <dict><key>NSIncludesSubdomains</key><true/></dict>
+    </dict>
+  </dict>
+</dict>
+</plist>
