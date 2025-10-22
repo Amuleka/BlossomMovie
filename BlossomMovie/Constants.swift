@@ -18,11 +18,17 @@ struct Constants {
     static let trendingTVString = "Trending TV"
     static let topRatedMovieString = "Top Rated Movies"
     static let topRatedTVString = "Top Rated TV"
+    static let movieSearchString = "Movie Search"
+    static let tvSearchString = "TV Search"
+    static let moviePlaceHolderString = "Search for a movie"
+    static let tvPlaceHolderString = "Search for a TV Show"
     
     static let homeIconString = "house"
     static let upcomingIconString = "play.circle"
     static let searchIconString = "magnifyingglass"
     static let downloadIconString = "arrow.down.to.line"
+    static let tvIconString = "tv"
+    static let movieIconString = "movieclapper"
     
     static let testTitleURL = "https://hollywoodlife.com/wp-content/uploads/2018/03/beetlejuice-2-release-date-ec-1.jpg?w=6802"
     static let testTitleURL2 = "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg"
