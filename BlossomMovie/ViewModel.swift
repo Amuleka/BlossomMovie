@@ -35,10 +35,10 @@ class ViewModel {
         if trendingMovies.isEmpty {
             
             do {
-                async let tMovies = dataFetcher.fetchTitle(for: "movie", by: "trending")
-                async let tTV = dataFetcher.fetchTitle(for: "tv", by: "trending")
-                async let tRMovies = dataFetcher.fetchTitle(for: "movie", by: "top_rated")
-                async let tRTV = dataFetcher.fetchTitle(for: "tv", by: "top_rated")
+                async let tMovies = dataFetcher.fetchTitles(for: "movie", by: "trending")
+                async let tTV = dataFetcher.fetchTitles(for: "tv", by: "trending")
+                async let tRMovies = dataFetcher.fetchTitles(for: "movie", by: "top_rated")
+                async let tRTV = dataFetcher.fetchTitles(for: "tv", by: "top_rated")
                 
                 trendingMovies = try await tMovies
                 trendingTV = try await tTV
@@ -74,7 +74,7 @@ class ViewModel {
         upcomingStatus = .fetching
         
         do {
-            upcomingMovies = try await dataFetcher.fetchTitle(for: "movie", by: "upcoming")
+            upcomingMovies = try await dataFetcher.fetchTitles(for: "movie", by: "upcoming")
             upcomingStatus = .success
         } catch {
             print(error)
