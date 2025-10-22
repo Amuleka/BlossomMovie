@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C739D5522EA9634800C70A8E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C739D5512EA9634800C70A8E /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C7AE55EB2EA71C9500A713EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C739D5512EA9634800C70A8E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C7AE55D92EA71C9300A713EF /* BlossomMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlossomMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AE55EA2EA71C9500A713EF /* BlossomMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlossomMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AE55F42EA71C9500A713EF /* BlossomMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlossomMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +84,7 @@
 				C7AE55ED2EA71C9500A713EF /* BlossomMovieTests */,
 				C7AE55F72EA71C9500A713EF /* BlossomMovieUITests */,
 				C7AE55DA2EA71C9300A713EF /* Products */,
+				C739D5512EA9634800C70A8E /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C739D5522EA9634800C70A8E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
