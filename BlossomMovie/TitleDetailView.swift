@@ -35,6 +35,20 @@ struct TitleDetailView: View {
                         
                         Text(title.overview ?? "")
                             .padding(5)
+                        
+                        HStack {
+                            Spacer()
+                            
+                            Button {
+                                
+                            } label: {
+                                Text(Constants.downloadingString)
+                                    .ghostButton()
+                            }
+                            
+                            Spacer()
+                        }
+
                     }
                 }
             case .failed(let underlyingError):
