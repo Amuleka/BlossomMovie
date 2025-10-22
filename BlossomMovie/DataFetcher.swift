@@ -47,7 +47,7 @@ struct DataFetcher {
         
         print(fetchVideoURL)
         
-        return try await fetchAndDecode(url: fetchVideoURL, type: YoutubeSearchResponse.self).items?.first?.id?.videId ?? ""
+        return try await fetchAndDecode(url: fetchVideoURL, type: YoutubeSearchResponse.self).items?.first?.id?.videoId ?? ""
     }
     
     func fetchAndDecode<T: Decodable>(url: URL, type: T.Type) async throws -> T {

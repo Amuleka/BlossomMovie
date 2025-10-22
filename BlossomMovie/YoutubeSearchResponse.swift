@@ -16,6 +16,6 @@ struct ItemProperties: Codable {
 }
 
 struct IdProperties: Codable {
-    let videId: String?
+    let videoId: String?
     
 }
